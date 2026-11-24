@@ -1,0 +1,98 @@
+[
+  {
+    "id": "s0",
+    "bag": "b0",
+    "design": "定向",
+    "prob": 1,
+    "bad_fraction": 0.12060516658785514,
+    "known_minute": 1000
+  },
+  {
+    "id": "s1",
+    "bag": "b1",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.06616179550684916,
+    "known_minute": 1005
+  },
+  {
+    "id": "s2",
+    "bag": "b2",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.03593745075560949,
+    "known_minute": 1010
+  },
+  {
+    "id": "s3",
+    "bag": "b3",
+    "design": "定向",
+    "prob": 1,
+    "bad_fraction": 0.09521691478947845,
+    "known_minute": 1015
+  },
+  {
+    "id": "s4",
+    "bag": "b4",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.03486511462275055,
+    "known_minute": 1020
+  },
+  {
+    "id": "s5",
+    "bag": "b5",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.12460499348802223,
+    "known_minute": 1025
+  },
+  {
+    "id": "s6",
+    "bag": "b6",
+    "design": "定向",
+    "prob": 1,
+    "bad_fraction": 0.030739839367610405,
+    "known_minute": 1030
+  },
+  {
+    "id": "s7",
+    "bag": "b7",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.12284871898131537,
+    "known_minute": 1035
+  },
+  {
+    "id": "s8",
+    "bag": "b8",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.04288052226522855,
+    "known_minute": 1040
+  },
+  {
+    "id": "s9",
+    "bag": "b9",
+    "design": "定向",
+    "prob": 1,
+    "bad_fraction": 0.14322017661696604,
+    "known_minute": 1045
+  },
+  {
+    "id": "s10",
+    "bag": "b10",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.10163578948057703,
+    "known_minute": 1050
+  },
+  {
+    "id": "s11",
+    "bag": "b11",
+    "design": "计划随机",
+    "prob": 0.2,
+    "bad_fraction": 0.11490527337339976,
+    "known_minute": 1055
+  }
+]

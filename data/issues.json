@@ -1,0 +1,218 @@
+[
+  {
+    "id": "i0",
+    "lot": "l1",
+    "worker": "w0",
+    "kg": 20,
+    "minute": 200,
+    "promised_kg": 10,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i1",
+    "lot": "l2",
+    "worker": "w1",
+    "kg": 21,
+    "minute": 205,
+    "promised_kg": 10,
+    "worked_hours": -1
+  },
+  {
+    "id": "i2",
+    "lot": "l1",
+    "worker": "w2",
+    "kg": 22,
+    "minute": 210,
+    "promised_kg": 10,
+    "worked_hours": -1
+  },
+  {
+    "id": "i3",
+    "lot": "l2",
+    "worker": "w3",
+    "kg": 23,
+    "minute": 215,
+    "promised_kg": 10,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i4",
+    "lot": "l1",
+    "worker": "w4",
+    "kg": 20,
+    "minute": 220,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i5",
+    "lot": "l2",
+    "worker": "w5",
+    "kg": 21,
+    "minute": 225,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i6",
+    "lot": "l1",
+    "worker": "w6",
+    "kg": 22,
+    "minute": 230,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i7",
+    "lot": "l2",
+    "worker": "w7",
+    "kg": 23,
+    "minute": 235,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i8",
+    "lot": "l1",
+    "worker": "w0",
+    "kg": 20,
+    "minute": 240,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i9",
+    "lot": "l2",
+    "worker": "w1",
+    "kg": 21,
+    "minute": 245,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i10",
+    "lot": "l1",
+    "worker": "w2",
+    "kg": 22,
+    "minute": 250,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i11",
+    "lot": "l2",
+    "worker": "w3",
+    "kg": 23,
+    "minute": 255,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i12",
+    "lot": "l1",
+    "worker": "w4",
+    "kg": 20,
+    "minute": 260,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i13",
+    "lot": "l2",
+    "worker": "w5",
+    "kg": 21,
+    "minute": 265,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i14",
+    "lot": "l1",
+    "worker": "w6",
+    "kg": 22,
+    "minute": 270,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i15",
+    "lot": "l2",
+    "worker": "w7",
+    "kg": 23,
+    "minute": 275,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i16",
+    "lot": "l1",
+    "worker": "w0",
+    "kg": 20,
+    "minute": 280,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i17",
+    "lot": "l2",
+    "worker": "w1",
+    "kg": 21,
+    "minute": 285,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i18",
+    "lot": "l1",
+    "worker": "w2",
+    "kg": 22,
+    "minute": 290,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i19",
+    "lot": "l2",
+    "worker": "w3",
+    "kg": 23,
+    "minute": 295,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i20",
+    "lot": "l1",
+    "worker": "w4",
+    "kg": 20,
+    "minute": 300,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i21",
+    "lot": "l2",
+    "worker": "w5",
+    "kg": 21,
+    "minute": 305,
+    "promised_kg": 0,
+    "worked_hours": 4.5
+  },
+  {
+    "id": "i22",
+    "lot": "l1",
+    "worker": "w6",
+    "kg": 22,
+    "minute": 310,
+    "promised_kg": 0,
+    "worked_hours": -1
+  },
+  {
+    "id": "i23",
+    "lot": "l2",
+    "worker": "w7",
+    "kg": 23,
+    "minute": 315,
+    "promised_kg": 0,
+    "worked_hours": -1
+  }
+]

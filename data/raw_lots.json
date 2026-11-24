@@ -1,0 +1,23 @@
+[
+  {
+    "id": "l1",
+    "grade": "嫩",
+    "harvest_minute": 0,
+    "chilled_minute": 90,
+    "processable_until": 1440
+  },
+  {
+    "id": "l2",
+    "grade": "老",
+    "harvest_minute": 30,
+    "chilled_minute": 240,
+    "processable_until": 1440
+  },
+  {
+    "id": "l3",
+    "grade": "嫩",
+    "harvest_minute": 1200,
+    "chilled_minute": 1260,
+    "processable_until": 2640
+  }
+]

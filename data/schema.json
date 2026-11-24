@@ -1,0 +1,244 @@
+{
+  "format_version": 1,
+  "synthetic": true,
+  "tables": {
+    "raw_lots": {
+      "description": "采摘与预冷影响可比保存时长",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "原料批"
+        },
+        "grade": {
+          "type": "string",
+          "description": "老嫩等级"
+        },
+        "harvest_minute": {
+          "type": "integer",
+          "description": "采摘分钟"
+        },
+        "chilled_minute": {
+          "type": "integer",
+          "description": "预冷分钟"
+        },
+        "processable_until": {
+          "type": "integer",
+          "description": "可加工截止"
+        }
+      },
+      "refs": {}
+    },
+    "issues": {
+      "description": "发料承诺和实际交接；重量千克",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "发料"
+        },
+        "lot": {
+          "type": "string",
+          "description": "原料批"
+        },
+        "worker": {
+          "type": "string",
+          "description": "加工人"
+        },
+        "kg": {
+          "type": "number",
+          "description": "交接重量"
+        },
+        "minute": {
+          "type": "integer",
+          "description": "实际分钟"
+        },
+        "promised_kg": {
+          "type": "number",
+          "description": "已通知下期量"
+        },
+        "worked_hours": {
+          "type": "number",
+          "description": "已确认工时，负一表示未提供"
+        }
+      },
+      "refs": {
+        "lot": "raw_lots.id"
+      }
+    },
+    "returns": {
+      "description": "一份回料只归一份发料；同发料可分次",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "回料"
+        },
+        "issue": {
+          "type": "string",
+          "description": "发料"
+        },
+        "bag": {
+          "type": "string",
+          "description": "送检袋"
+        },
+        "kg": {
+          "type": "number",
+          "description": "成品千克"
+        },
+        "minute": {
+          "type": "integer",
+          "description": "实际分钟"
+        }
+      },
+      "refs": {
+        "issue": "issues.id",
+        "bag": "bags.id"
+      }
+    },
+    "bags": {
+      "description": "共同袋封样决定后续能否归因",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "袋"
+        },
+        "seal": {
+          "type": "string",
+          "description": "封样状态"
+        }
+      },
+      "refs": {}
+    },
+    "samples": {
+      "description": "混袋检验不是各发料完整质量",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "样本"
+        },
+        "bag": {
+          "type": "string",
+          "description": "袋"
+        },
+        "design": {
+          "type": "string",
+          "description": "计划随机或定向"
+        },
+        "prob": {
+          "type": "number",
+          "description": "入样概率"
+        },
+        "bad_fraction": {
+          "type": "number",
+          "description": "坏豆比例"
+        },
+        "known_minute": {
+          "type": "integer",
+          "description": "知悉分钟"
+        }
+      },
+      "refs": {
+        "bag": "bags.id"
+      }
+    },
+    "retests": {
+      "description": "复检结论只陈述事实及适用范围",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "复检"
+        },
+        "lot": {
+          "type": "string",
+          "description": "原料批"
+        },
+        "bag": {
+          "type": "string",
+          "description": "袋"
+        },
+        "finding": {
+          "type": "string",
+          "description": "事实"
+        },
+        "known_minute": {
+          "type": "integer",
+          "description": "收到分钟"
+        }
+      },
+      "refs": {
+        "lot": "raw_lots.id",
+        "bag": "bags.id"
+      }
+    },
+    "pay_rules": {
+      "description": "历史生效协议，分与比例",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "协议"
+        },
+        "effective_minute": {
+          "type": "integer",
+          "description": "起效"
+        },
+        "unit_cents_per_kg": {
+          "type": "integer",
+          "description": "每千克工钱"
+        },
+        "deferred_fraction": {
+          "type": "number",
+          "description": "质量递延比例"
+        },
+        "minimum_uncontested_fraction": {
+          "type": "number",
+          "description": "可独立支付比例"
+        }
+      },
+      "refs": {}
+    },
+    "payments": {
+      "description": "实际已付，不覆盖",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "支付"
+        },
+        "return_id": {
+          "type": "string",
+          "description": "回料"
+        },
+        "amount_cents": {
+          "type": "integer",
+          "description": "金额"
+        },
+        "minute": {
+          "type": "integer",
+          "description": "支付分钟"
+        }
+      },
+      "refs": {
+        "return_id": "returns.id"
+      }
+    },
+    "inspection_capacity": {
+      "description": "下期抽检可用窗口",
+      "columns": {
+        "id": {
+          "type": "string",
+          "description": "能力"
+        },
+        "start": {
+          "type": "integer",
+          "description": "起分钟"
+        },
+        "end": {
+          "type": "integer",
+          "description": "止分钟"
+        },
+        "bags": {
+          "type": "integer",
+          "description": "袋数"
+        }
+      },
+      "refs": {}
+    }
+  }
+}
